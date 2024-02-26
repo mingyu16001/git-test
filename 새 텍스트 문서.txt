@@ -1,0 +1,27 @@
+// branch 생성
+git switch -c feature/sub-page
+// 생성된 branch 확인
+git branch
+// 깃헙에 추가
+git add .
+// 커밋 작성
+git commit
+# 예) feat: 로그인 기능 추가 #이슈번호, feat: nextjs13 프로젝트 시작, feat: 메인 UI 적용 #이슈번호
+feat: 서브페이지 완료 #3	>> 저장 후 닫기
+// 수정된 내용 작성
+git push -u origin feature/sub-page	>>github에서 pr 누르고
+Add a title 에서 feat: 서브페이지 완료 #3
+// #3 해결됨을 표시
+Add a description 에서 resolve: #3
+// pull requests 생성
+create pr
+// pr 병합
+merge pr
+
+confirm merge
+// main으로 선택
+git switch main
+
+git merge feature/sub-page
+
+git branch -d feature/sub-page
